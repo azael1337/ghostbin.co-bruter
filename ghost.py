@@ -5,7 +5,7 @@ import requests
 
 from colorama import Fore
 
-init(convert=True)
+init(convert=True) # remove this line if you're a linux user
 
 def save_url(content):
   with open('hit.txt', 'a+') as f:
