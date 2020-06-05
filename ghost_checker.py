@@ -4,7 +4,8 @@
 
 import requests
 
-f = open('hit.txt').read().split('\n')
+file_name = input("File name of the ghostbin.co valid brutes: ")
+f = open(file_name).read().split('\n')
 
 def save_content(file, content):
     with open(file, 'a+') as f:
@@ -13,4 +14,5 @@ def save_content(file, content):
 for link in f:
    r = requests.get(link + '/raw')
    save_content(link.split('/')[4], r.text)
+f.close()
 print("Finished.")
