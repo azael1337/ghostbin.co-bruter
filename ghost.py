@@ -3,7 +3,7 @@ import threading
 import random
 import requests
 
-from colorama import Fore
+from colorama import Fore, init
 
 init(convert=True) # remove this line if you're a linux user
 
