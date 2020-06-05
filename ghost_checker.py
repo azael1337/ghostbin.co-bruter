@@ -8,7 +8,7 @@ file_name = input("File name of the ghostbin.co valid brutes: ")
 f = open(file_name).read().split('\n')
 
 def save_content(file, content):
-    with open(file, 'a+') as f:
+    with open(file, 'a+', encoding='utf-8') as f:
          f.write(content)
 
 for link in f:
