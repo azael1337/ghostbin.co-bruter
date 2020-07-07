@@ -27,7 +27,7 @@ def check_urls():
 
 def main(threads):
     if threading.active_count() <= threads:
-        t = threading.Thread(target=check_urls, args=())
+        t = threading.Thread(target=check_urls)
         t.start()
 
 
